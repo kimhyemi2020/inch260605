@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Copilot Studio 챗봇">
+    <title>챗봇 - Copilot Studio</title>
+    
+    <!-- Google Fonts - 부드러운 글씨체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0e4f0 0%, #e8f4ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .chatbot-wrapper {
+            width: 50%;
+            height: 66.67%;
+            background: linear-gradient(135deg, rgba(222, 141, 226, 0.1) 0%, rgba(128, 185, 239, 0.1) 100%);
+            border-radius: 24px;
+            padding: 16px;
+            box-shadow: 0 8px 32px rgba(128, 185, 239, 0.15),
+                        0 4px 16px rgba(222, 141, 226, 0.1);
+            border: 2px solid rgba(222, 141, 226, 0.2);
+            overflow: hidden;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+            display: block;
+        }
+        
+        /* 반응형 디자인 - 태블릿 */
+        @media (max-width: 1024px) {
+            .chatbot-wrapper {
+                width: 70%;
+                height: 75%;
+            }
+        }
+        
+        /* 반응형 디자인 - 모바일 */
+        @media (max-width: 768px) {
+            .chatbot-wrapper {
+                width: 95%;
+                height: 85%;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbot-wrapper">
+        <iframe 
+            src="https://copilotstudio.microsoft.com/environments/Default-62ae463a-9f12-4edf-8544-4f6ca3834524/bots/cre4a_ms_eun/webchat?__version__=2" 
+            frameborder="0"
+            title="Copilot 챗봇">
+        </iframe>
+    </div>
+</body>
+</html>
